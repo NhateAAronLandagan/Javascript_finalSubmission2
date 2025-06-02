@@ -107,6 +107,7 @@
 /* REUSABLE CSS */
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 body,
@@ -161,6 +162,7 @@ video {
 
 .section {
   padding-block: 5rem 1rem;
+  scroll-snap-align: start;
 }
 
 .section__title, 
@@ -366,6 +368,10 @@ header .navbar {
   background: url(../assets/img/dark-mode-bg-enhanced.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.dark header .menu li a {
+  color: var(--dark-text-color);
 }
 
 .dark header.scrolled {
@@ -756,7 +762,6 @@ header .navbar {
 }
 
 .customize .customize-container {
-  display: block;
   align-items: center;
 }
 
@@ -1064,8 +1069,20 @@ footer {
     font-size: 1.2rem;
   }
 
+  .customize .customize-container {
+    justify-content: center;
+    text-align: center;
+  }
+
   .customize .customize-container .customize-heading {
     font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .customize .customize-container .customize-heading-info {
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: center;
   }
 
   .contact {
