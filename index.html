@@ -208,7 +208,7 @@
             Let's Configure <br>your own car
           </h3>
 
-          <a href="#" class="customize-button">Let's go</a>
+          <a href="#customize" class="customize-button">Let's go</a>
 
           <div class="customize-img">
           </div>
@@ -216,6 +216,81 @@
 
       </div>
     </section>
+
+    <!-- Shop section -->
+     <section class="shop" id="shop">
+
+      <div class="content">
+
+          <h2 class="section__title shop-title">
+            Our best offers
+          </h2>
+
+        <div class="shop-container">
+          
+          <div class="shop-card">
+
+              <div class="box-container">
+
+                <div class="shop-image">
+                <img src="assets/img/Lamborghini Gallardo.jpg" alt="product 1" class="light-image">
+                <img src="assets/img/Lamborghini Gallarado.png" alt="product 1" class="dark-image">
+                </div>
+                <div class="box-infos">
+                  <h3 class="product-name">Gallarado LP560-4</h3>
+                  <h3 class="product-price">$50,000</h3>
+                  <div class="box-buttons">
+                    <a href="shop.html" class="product-button">Buy now</a>
+                    <a href="shop.html" class="product-cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="shop.html" class="product-heart"><i class="fa-regular fa-heart"></i></a>
+                  </div>
+
+                </div>
+              </div>
+
+                <div class="box-container">
+                 <div class="shop-image">
+                <img src="assets/img/2015 Lamborghini Huracan LP610-4.jpg" alt="product 1" class="light-image">
+                <img src="assets/img/shop_2015 Lamborghini Huracan LP610-4.png" alt="product 2" class="dark-image">
+                </div>
+                <div class="box-infos">
+                  <h3 class="product-name">LHuracan LP610-4</h3>
+                  <h3 class="product-price">$70,000</h3>
+                  <div class="box-buttons">
+                    <a href="shop.html" class="product-button">Buy now</a>
+                    <a href="shop.html" class="product-cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="shop.html" class="product-heart"><i class="fa-regular fa-heart"></i></a>
+                  </div>
+
+                </div>
+              </div>
+
+                <div class="box-container">
+                  <div class="shop-image">
+                    <img src="assets/img/Lamborghini Aventador SJV.jpg" alt="product 1" class="light-image">
+                    <img src="assets/img/shop_Lamborghini Aventador SJV.png" alt="product 3" class="dark-image">
+                  </div>
+                <div class="box-infos">
+                  <h3 class="product-name">Aventador SJV</h3>
+                  <h3 class="product-price">$65,000</h3>
+                  <div class="box-buttons">
+                  <a href="shop.html" class="product-button">Buy now</a>
+                  <a href="shop.html" class="product-cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                  <a href="shop.html" class="product-heart"><i class="fa-regular fa-heart"></i></a>
+                </div>
+
+                </div>
+              </div>
+              
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+     </section>
 
     <!-- Contact section -->
 
@@ -229,7 +304,7 @@
             Subscribe to Unlock <br>Exclusive Models & Offers
           </h2>
 
-          <form action="#" class="contact-form grid">
+          <form action="#contact" class="contact-form grid">
 
             <div class="contact-inputs grid">
 
@@ -238,11 +313,13 @@
               </div>
 
               <div class="contact-box">
-                <input type="email" id="email" placeholder="Your Email" class="contact-input">
+                <input type="email" id="email" placeholder="Your Email" class="contact-input" required>
               </div>
             </div>
 
             <button class="button contact-button">Send Email</button>
+
+            <div id="message" style="color: red;"></div>
 
           </form>
 

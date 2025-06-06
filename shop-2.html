@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars Show - Shop page</title>
+    <!-- Link to external CSS -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <!-- Link to second external CSS -->
+     <link rel="stylesheet" href="css/shop.css">
+    <!-- Toggle Menu Symbol -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Swiper CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- NAVBAR SECTION -->
+    <header>
+    <nav class="navbar">
+
+      <a href="index.html" class="logo">Cars Show</a>
+
+      <ul class="menu">
+
+        <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#inventory">Inventory</a></li>
+        <li><a href="index.html#customize">Customize</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+
+      <a href="#" class="switch-mode" id="switchButton">
+        <input class="switch-input" type="checkbox" id="darkmode-toggle" style="display: none;">
+        <label class="switch" for="darkmode-toggle"></label>
+      </a>
+
+      <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+
+    </nav>
+  </header>
+
+  <section class="shop" id="shop">
+
+    <div class="content">
+
+    <div class="shop-content">
+
+        <div class="image-content">
+            <img src="assets//img/2015 Lamborghini Huracan LP610-4.jpg" alt="Product image" class="image-file">
+            <img src="assets//img/shop_2015 Lamborghini Huracan LP610-4.png" alt="#" class="dark-image">
+          </div>
+
+        <div class="content-container">
+            <h2 class="product-title">2015 Huracan LP610-4</h2>
+            <h2 class="mini-title">Lamborghini Huracan</h2>
+            <h3 class="product-price">$70,000</h3>
+            
+            <div class="button-quantity">
+            <a href="#" id="decrementButton">-</a>
+            <p id="counter">0</p>
+            <a href="#" id="incrementButton">+</a>
+            </div>
+
+            <div class="button-content">
+            <a href="#" id="buyButton">Buy now</a>
+            <a href="#" id="cartButton">Add to cart<i class="fa-solid fa-cart-shopping"></i></a>
+            <label class="fav-toggle">
+            <input type="checkbox" hidden style="display: none;">
+            <a class="heart" id="favButton">Favorite <i class="fa-solid fa-heart"></i></a>
+          </label>
+            
+        </div>
+
+                      <div id="text"></div>
+
+        </div>
+
+    </div>
+
+  </section>
+    
+    <!-- Link to external JS -->
+    <script src="js/shop.js"></script>
+</body>
+</html>
